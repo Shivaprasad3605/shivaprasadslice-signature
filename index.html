@@ -489,11 +489,11 @@
       <div class="form-grid">
         <div class="field">
           <label for="sig-name">Full Name</label>
-          <input id="sig-name" type="text" value=" Slice " autocomplete="on">
+          <input id="sig-name" type="text" value="Slice" autocomplete="off">
         </div>
         <div class="field">
           <label for="sig-title">Job Title</label>
-          <input id="sig-title" type="text" value="  " autocomplete="off" placeholder="e.g. Marketing Manager">
+          <input id="sig-title" type="text" value="IT" autocomplete="off" placeholder="e.g. Marketing Manager">
         </div>
         <div class="field">
           <label for="sig-company">Company</label>
@@ -1542,6 +1542,7 @@
       });
 
       // ============= INITIAL RENDER =============
+      forgetSaved();
       loadState();
       render();
       checkForUpdate();
